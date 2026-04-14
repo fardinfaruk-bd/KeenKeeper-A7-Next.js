@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { use } from 'react';
 import { CiClock2 } from 'react-icons/ci';
 import { GoGraph } from 'react-icons/go';
 import { IoHomeOutline } from 'react-icons/io5';
+import MyLink from './MyLink';
 
 const Navbar = () => {
+
     return (
-        <div className='navbar bg-base-100 shadow-sm'>
+        <div className='navbar bg-white shadow-sm'>
             <div className="container mx-auto flex justify-between items-center">
                 <div>
                     <div className="dropdown">
@@ -15,18 +17,18 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a> Home</a></li>
-                            <li><a>Timeline</a></li>
-                            <li><a>Stats</a></li>
+                            <li><MyLink href={"/"}> Home</MyLink></li>
+                            <li><MyLink href={"/timeline"}>Timeline</MyLink></li>
+                            <li><MyLink href={"/state"}>Stats</MyLink></li>
                         </ul>
                     </div>
                     <button className=' gap-0 font-bold text-2xl'>Keen<span className='text-[#244D3F]'>Keeper</span></button>
                 </div>
                 <div className=" hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-2 text-[#64748B]">
-                        <li><a><IoHomeOutline /> Home</a></li>
-                        <li><a><CiClock2 /> Timeline</a></li>
-                        <li><a><GoGraph /> Stats</a></li>
+                    <ul className="flex px-1 gap-2 text-[#64748B]">
+                        <li><MyLink href={"/"}><IoHomeOutline /> Home</MyLink ></li>
+                        <li><MyLink href={"/timeline"}><CiClock2 /> Timeline</MyLink ></li>
+                        <li><MyLink href={"/state"}><GoGraph /> Stats</MyLink ></li>
                     </ul>
                 </div>
 

@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white overflow-hidden">
+    <div className="flex items-center justify-center h-screen bg-linear-to-br from-black via-gray-900 to-gray-800 text-white overflow-hidden">
       
       {/* Background glow */}
-      <div className="absolute w-[500px] h-[500px] bg-purple-500 rounded-full blur-[120px] opacity-20 animate-pulse"></div>
+      <div className="absolute w-125 h-125 bg-purple-500 rounded-full blur-[120px] opacity-20 animate-pulse"></div>
 
       <div className="text-center z-10">
         
@@ -17,7 +17,7 @@ export default function NotFound() {
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="text-8xl font-extrabold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+          className="text-8xl font-extrabold tracking-widest text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600"
         >
           404
         </motion.h1>
@@ -40,7 +40,7 @@ export default function NotFound() {
         >
           <Link
             href="/"
-            className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl font-semibold shadow-lg hover:scale-105 transition-transform"
+            className="inline-block mt-6 px-6 py-3 bg-linear-to-r from-purple-500 to-pink-500 rounded-xl font-semibold shadow-lg hover:scale-105 transition-transform"
           >
             Return Home
           </Link>

@@ -1,7 +1,14 @@
-import Image from "next/image";
+import Banner from "@/components/homepage/Banner/Banner";
+import Friends from "@/components/homepage/Banner/Friends";
+import { div } from "framer-motion/client";
+
 
 export default function Home() {
   return (
-    <h2>Hello World</h2>
+    <div>
+      <Banner />
+      <Friends />
+    </div>
+    
   );
 }
