@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Hossain",
+    "picture": "https://i.ibb.co.com/VcKxppGw/Whisk-0e7b68f5497f18fa58c4fd6986f3f9f3dr.jpg",
+    "email": "arafat.hossain@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied Computer Science together at university. Loves gaming and late-night coding sessions.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://i.ibb.co.com/LmqDtbK/Whisk-e675b86392f929e9a24420379e5f151adr.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["work", "design team"],
+    "bio": "Colleague from my previous job. Very creative and always shares design inspiration.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 3,
+    "name": "Mahim Rahman",
+    "picture": "https://i.ibb.co.com/HpBL5xX3/Whisk-36bf0f487311c26a8c54e6cc44085843dr.jpg",
+    "email": "mahim.rahman@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "football"],
+    "bio": "School friend and football teammate. We still play on weekends when possible.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 4,
+    "name": "Farzana Akter",
+    "picture": "https://i.ibb.co.com/zVkQwhbK/Whisk-f97b588904faf2fb83944d9d64edc1eadr.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["family friend"],
+    "bio": "Family friend since childhood. Always checks in during festivals and special occasions.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 5,
+    "name": "Tanvir Ahmed",
+    "picture": "https://i.ibb.co.com/xKRxL1qh/Whisk-2deced46c245b8ea8a54a278223a708adr.jpg",
+    "email": "tanvir.ahmed@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["university", "project partner"],
+    "bio": "Worked on multiple university projects together. Great problem-solving skills.",
+    "goal": 14,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Karim",
+    "picture": "https://i.ibb.co.com/gb22XkTc/Whisk-20192864e800a07a8b844abdbeaeb554dr.jpg",
+    "email": "sadia.karim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Met at the gym. We motivate each other to stay consistent with workouts.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 7,
+    "name": "Rafiul Islam",
+    "picture": "https://i.ibb.co.com/TBYnwr4Z/Whisk-079c47d0abd312480684865969cfc303dr.jpg",
+    "email": "rafiul.islam@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["startup", "tech"],
+    "bio": "Met at a startup event. We often discuss business ideas and tech trends.",
+    "goal": 14,
+    "next_due_date": "2026-04-07"
+  },
+  {
+    "id": 8,
+    "name": "Mim Chowdhury",
+    "picture": "https://i.ibb.co.com/gFBp665G/Whisk-582ed4d1c746f389f074b2669ef2900bdr.jpg",
+    "email": "mim.chowdhury@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["neighbor", "childhood"],
+    "bio": "Grew up in the same neighborhood. We still meet occasionally for tea and chats.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  }
+]
