@@ -110,9 +110,9 @@ const FriendDetailsPage = async ({ params }) => {
             <h3 className="text-xl text-[#244D3F] font-medium mb-3">Quick Check-In</h3>
 
             <div className="grid grid-cols-3 gap-4 ">
-              <MyBtn text= "Call" img={PhoneImg} />
-              <MyBtn text= "Text" img={TextImg} />
-              <MyBtn text= "Video" img={VideoImg} />
+              <MyBtn text= "Call" img={PhoneImg} friend={friend} />
+              <MyBtn text= "Text" img={TextImg} friend={friend} />
+              <MyBtn text= "Video" img={VideoImg} friend={friend} />
             </div>
           </div>
 
