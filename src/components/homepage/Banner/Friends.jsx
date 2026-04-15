@@ -6,6 +6,9 @@ import React from 'react';
 
 const Friends = () => {
     const { friends, loading } = useFriends();
+
+    
+
     return (
         <>
             <div className='container mx-auto space-y-5 py-10'>
