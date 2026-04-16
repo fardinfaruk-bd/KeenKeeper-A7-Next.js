@@ -10,15 +10,14 @@ import { FcBusinessContact } from 'react-icons/fc';
 const TimelineCard = () => {
     const { friendTimeline } = useContext(FriendTimelineContext);
 
-    // ✅ dropdown filter state (empty = show all)
+    
     const [selectedType, setSelectedType] = useState("");
 
-    // ✅ filtering logic
+    
     const filteredTimeline = selectedType === ""
         ? friendTimeline
         : friendTimeline.filter(item => item.type === selectedType);
 
-    // ✅ empty state
     if (!friendTimeline || friendTimeline.length === 0) {
         return (
             <div className="min-h-[40vh] sm:min-h-[60vh] my-10 shadow p-10 rounded-md flex flex-col items-center justify-center ">
