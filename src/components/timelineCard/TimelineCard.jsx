@@ -10,7 +10,6 @@ import { FcBusinessContact } from 'react-icons/fc';
 
 const TimelineCard = () => {
     const { friendTimeline } = useContext(FriendTimelineContext);
-    console.log(friendTimeline, "timeline card");
 
     if (!friendTimeline || friendTimeline.length === 0) {
         return (
@@ -23,7 +22,7 @@ const TimelineCard = () => {
         )
     }
     return (
-        <div className='flex flex-col gap-5 min-h-[40vh] sm:min-h-[60vh] my-10'>
+        <div className='flex flex-col gap-5  my-10'>
             {friendTimeline.map((item, index) => (
                 <div key={index} className='bg-white p-5 rounded-lg shadow-md flex items-center space-x-4 '>
                     <Image src={item.type === 'Text' ? TextImg : item.type === 'Call' ? CallImg : VideoImg} width={40} height={40} alt={TextImg}></Image>
