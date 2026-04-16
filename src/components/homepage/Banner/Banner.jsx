@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoIosAdd } from 'react-icons/io';
+import BannerCard from './BannerCard';
 
 const Banner = () => {
     return (
@@ -13,22 +14,11 @@ const Banner = () => {
                     <button className='btn bg-[#244D3F] text-white'><IoIosAdd /> Add A Friend</button>
                 </div>
                 <div className='grid grid-cols-4 gap-10'>
-                    <div className='bg-white p-8 text-center rounded-lg shadow-sm'>
-                        <h3 className='text-[#244D3F] font-bold text-[32px]'>10</h3>
-                        <p className='text-[#64748B] text-[18px]'>Total Friends</p>
-                    </div>
-                    <div className='bg-white p-8 text-center rounded-lg shadow-sm'>
-                        <h3 className='text-[#244D3F] font-bold text-[32px]'>3</h3>
-                        <p className='text-[#64748B] text-[18px]'>On Track</p>
-                    </div>
-                    <div className='bg-white p-8 text-center rounded-lg shadow-sm'>
-                        <h3 className='text-[#244D3F] font-bold text-[32px]'>6</h3>
-                        <p className='text-[#64748B] text-[18px]'>Need Attention</p>
-                    </div>
-                    <div className='bg-white p-8 text-center rounded-lg shadow-sm'>
-                        <h3 className='text-[#244D3F] font-bold text-[32px]'>12</h3>
-                        <p className='text-[#64748B] text-[18px]'>Interaction</p>
-                    </div>
+                    <BannerCard text="Total Friends" />
+                    <BannerCard text="On Track" />
+                    <BannerCard text="Need Attention" />
+                    <BannerCard text="Interactions This Month" />
+                    
                 </div>
             </div>
         </div>

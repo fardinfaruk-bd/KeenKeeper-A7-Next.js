@@ -2,6 +2,7 @@
 import { FriendTimelineContext } from '@/context/FriendContactProvider';
 import Image from 'next/image';
 import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
 
 
 const MyBtn = ({ text, img, friend }) => {
@@ -10,14 +11,20 @@ const MyBtn = ({ text, img, friend }) => {
     console.log(friendTimeline, "my btn");
 
     const handleFriendContactBtn = () => {
-        const now = new Date(); 
+        const now = new Date();
         const updatedFriend = {
             ...friend,
             type: text,
             time: now.toLocaleTimeString(),
+
         };
+        toast.success(`You ${text === 'Call'
+            ? 'Called'
+            : text === 'Video'
+                ? 'Video Call'
+                : 'Texted'}  ${friend.name} successfully!`);
         setFriendTimeline([...friendTimeline, updatedFriend]);
-        
+
     }
 
     return (

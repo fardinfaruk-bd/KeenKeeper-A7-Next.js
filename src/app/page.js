@@ -1,5 +1,5 @@
 import Banner from "@/components/homepage/Banner/Banner";
-import Friends from "@/components/homepage/Banner/Friends";
+import Friends from "@/components/homepage/Friends";
 import { div } from "framer-motion/client";
 
 
