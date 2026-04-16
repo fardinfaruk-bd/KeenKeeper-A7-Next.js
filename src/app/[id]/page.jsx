@@ -27,6 +27,7 @@ const FriendDetailsPage = async ({ params }) => {
   const { id } = await params;
 
   const friend = friends.find((friend) => String(friend.id) === id);
+  console.log(friend);
 
   if (!friend) {
     notFound();

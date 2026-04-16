@@ -12,7 +12,6 @@ const MyBtn = ({ text, img, friend }) => {
     const handleFriendContactBtn = () => {
         setFriendTimeline([...friendTimeline, friend]);
         setContactType(text);
-
     }
 
     return (
