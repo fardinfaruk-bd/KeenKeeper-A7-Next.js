@@ -6,7 +6,7 @@ const useFriends = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch('/data.json');
+            const res = await fetch('https://keenkeeper-alpha.vercel.app/data.json');
             const data = await res.json();
 
             setFriends(data);

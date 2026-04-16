@@ -11,7 +11,7 @@ import VideoImg from "../../assets/video.png"
 
 
 const friendPromise = async function () {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data.json`, {
+  const res = await fetch("https://keenkeeper-alpha.vercel.app/data.json", {
     cache: 'no-store'
   });
   return res.json();
