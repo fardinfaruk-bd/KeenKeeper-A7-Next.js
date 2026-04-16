@@ -6,7 +6,7 @@ import { FiInstagram } from 'react-icons/fi';
 const Footer = () => {
     return (
         <div className=' bg-[#244D3F] text-white text-center pt-20 pb-10 space-y-9'>
-            <div className='container mx-auto space-y-9' >
+            <div className='w-[90%] sm:w-[80%] mx-auto space-y-9' >
                 <div>
                     <h1 className='text-4xl sm:text-6xl font-bold'>KeenKeeper</h1>
                     <p className='text-[#d3dbd9]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>

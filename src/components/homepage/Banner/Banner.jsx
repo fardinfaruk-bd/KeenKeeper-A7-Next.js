@@ -4,7 +4,7 @@ import BannerCard from './BannerCard';
 
 const Banner = () => {
     return (
-        <div className='w-[90%] md:container mx-auto '>
+        <div className='w-[90%] sm:w-[80%]  mx-auto '>
             <div className='space-y-10 pt-20 pb-10 border-b border-gray-400'>
                 <div className='text-center space-y-5'>
                     <div className='space-y-4'>
