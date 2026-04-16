@@ -11,8 +11,8 @@ import VideoImg from "../../assets/video.png"
 
 
 const friendPromise = async function () {
-  const res = await fetch('https://keen-keeper-a7-next-js.vercel.app/data.json', {
-    cache: "no-store"
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data.json`, {
+    cache: 'no-store'
   });
   return res.json();
 };
@@ -59,7 +59,7 @@ const FriendDetailsPage = async ({ params }) => {
             <h2 className=" font-semibold text-xl">{friend.name}</h2>
             <p className={`rounded-4xl p-2 text-[12px] text-white px-4 font-medium capitalize ${statusColor[friend.status]}`}>{friend.status}</p>
             <div className='flex gap-3 justify-center'>
-                {friend.tags.map((tag, ind) => <div key={ind}><p className=' bg-[#CBFADB] rounded-4xl p-2 text-[12px] text-[#244D3F] font-medium'>{tag.toUpperCase()}</p></div>)}
+              {friend.tags.map((tag, ind) => <div key={ind}><p className=' bg-[#CBFADB] rounded-4xl p-2 text-[12px] text-[#244D3F] font-medium'>{tag.toUpperCase()}</p></div>)}
             </div>
 
             <p className=" text-gray-400  italic">{friend.bio}</p>
@@ -112,9 +112,9 @@ const FriendDetailsPage = async ({ params }) => {
             <h3 className="text-xl text-[#244D3F] font-medium mb-3">Quick Check-In</h3>
 
             <div className="grid grid-cols-3 gap-4 ">
-              <MyBtn text= "Call" img={PhoneImg} friend={friend} />
-              <MyBtn text= "Text" img={TextImg} friend={friend} />
-              <MyBtn text= "Video" img={VideoImg} friend={friend} />
+              <MyBtn text="Call" img={PhoneImg} friend={friend} />
+              <MyBtn text="Text" img={TextImg} friend={friend} />
+              <MyBtn text="Video" img={VideoImg} friend={friend} />
             </div>
           </div>
 
