@@ -11,10 +11,11 @@ import VideoImg from "../../assets/video.png"
 
 
 const friendPromise = async function () {
-  const res = await fetch('http://localhost:3000/data.json');
-  const data = await res.json();
-  return data;
-}
+  const res = await fetch('http://localhost:3000/data.json', {
+    cache: "no-store"
+  });
+  return res.json();
+};
 
 
 
