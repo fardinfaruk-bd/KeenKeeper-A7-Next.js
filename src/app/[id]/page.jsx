@@ -11,7 +11,7 @@ import VideoImg from "../../assets/video.png"
 
 
 const friendPromise = async function () {
-  const res = await fetch('http://localhost:3000/data.json', {
+  const res = await fetch('https://keen-keeper-a7-next-js.vercel.app/data.json', {
     cache: "no-store"
   });
   return res.json();
