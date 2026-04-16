@@ -31,7 +31,6 @@ const Navbar = () => {
                         <li><MyLink href={"/state"}><GoGraph /> Stats</MyLink ></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     );

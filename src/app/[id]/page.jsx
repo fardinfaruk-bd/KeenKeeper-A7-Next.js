@@ -42,7 +42,7 @@ const FriendDetailsPage = async ({ params }) => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-      <div className="container mx-auto grid grid-cols-4 gap-4">
+      <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 
 
         <div className="col-span-1 space-y-4">
@@ -79,30 +79,30 @@ const FriendDetailsPage = async ({ params }) => {
         </div>
 
 
-        <div className="col-span-3 grid grid-cols-3 gap-4">
+        <div className="col-span-1 sm:col-span-2 md:col-span-3 grid grid-cols-3 gap-4">
 
 
-          <div className="bg-white p-4 rounded-xl shadow flex flex-col justify-center items-center ">
-            <h2 className="text-[30px] font-bold text-[#244D3F]">{friend.days_since_contact}</h2>
-            <p className="text-[18px] text-[#64748B]">Days Since Contact</p>
+          <div className="bg-white p-4 rounded-xl shadow flex flex-col justify-center items-center text-center">
+            <h2 className="text-xl sm:text-[30px] font-bold text-[#244D3F]">{friend.days_since_contact}</h2>
+            <p className="text-xs sm:text-[18px] text-[#64748B]">Days Since Contact</p>
           </div>
 
           <div className="bg-white p-4 rounded-xl shadow text-center flex flex-col justify-center items-center">
-            <h2 className="text-[30px] font-bold text-[#244D3F]">30</h2>
+            <h2 className="text-xl sm:text-[30px] font-bold text-[#244D3F]">{friend.goal}</h2>
             <p className="text-[18px] text-[#64748B]">Goal (Days)</p>
           </div>
 
 
           <div className="bg-white p-4 rounded-xl shadow text-center flex flex-col justify-center items-center">
-            <h2 className="text-[30px] font-bold text-[#244D3F]">{friend.next_due_date}</h2>
-            <p className="text-[18px] text-[#64748B]">Next Due</p>
+            <h2 className="text-xl sm:text-[30px] font-bold text-[#244D3F]">{friend.next_due_date}</h2>
+            <p className="text-xs sm:text-[18px] text-[#64748B]">Next Due</p>
           </div>
 
 
-          <div className="bg-white p-4 rounded-xl shadow col-span-3 flex justify-between items-center">
+          <div className="bg-white p-4 rounded-xl shadow col-span-3 flex justify-between items-center text-center">
             <div>
               <h3 className="font-medium text-xl text-[#244D3F]">Relationship Goal</h3>
-              <p className="text-[18px] text-[#64748B]">Connect every <span className="font-bold text-[#1F2937]">30 days</span></p>
+              <p className="text-xs sm:text-[18px] text-[#64748B]">Connect every <span className="font-bold text-[#1F2937]">30 days</span></p>
             </div>
             <button className="btn border px-4 py-1 rounded-lg text-sm">Edit</button>
           </div>

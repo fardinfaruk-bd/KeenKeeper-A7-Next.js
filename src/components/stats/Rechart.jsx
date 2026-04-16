@@ -24,8 +24,8 @@ const StatsPage = () => {
 
   if (CallCount === 0 && MessageCount === 0 && VideoCallCount === 0) {
     return (
-      <div className="min-h-[60vh] my-10 shadow p-10 rounded-md flex items-center justify-center ">
-        <h2 className="font-medium text-5xl mb-16 text-[#244D3F]">
+      <div className="min-h-[40vh] sm:min-h-[60vh] my-10 shadow p-10 rounded-md flex items-center justify-center ">
+        <h2 className="font-medium text-2xl sm:text-5xl mb-16 text-[#244D3F] text-center">
           No interactions to display
         </h2>
       </div>
@@ -35,7 +35,7 @@ const StatsPage = () => {
 
   return (
     <div className=" my-10 shadow p-10 rounded-md  container mx-auto">
-      <h2 className="font-medium text-xl mb-16 text-[#244D3F]">
+      <h2 className="font-medium text-[16px] sm:text-xl mb-16 text-[#244D3F]">
         By Interaction Type
       </h2>
       <PieChart

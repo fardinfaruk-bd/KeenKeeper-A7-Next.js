@@ -4,7 +4,7 @@ import BannerCard from './BannerCard';
 
 const Banner = () => {
     return (
-        <div className='container mx-auto '>
+        <div className='w-[90%] md:container mx-auto '>
             <div className='space-y-10 pt-20 pb-10 border-b border-gray-400'>
                 <div className='text-center space-y-5'>
                     <div className='space-y-4'>
@@ -13,7 +13,7 @@ const Banner = () => {
                     </div>
                     <button className='btn bg-[#244D3F] text-white'><IoIosAdd /> Add A Friend</button>
                 </div>
-                <div className='grid grid-cols-4 gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
                     <BannerCard text="Total Friends" />
                     <BannerCard text="On Track" />
                     <BannerCard text="Need Attention" />

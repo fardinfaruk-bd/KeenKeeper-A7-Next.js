@@ -6,7 +6,7 @@ import CallImg from '@/assets/call.png';
 import VideoImg from '@/assets/video.png';
 import Image from 'next/image';
 
-import { FcContacts } from 'react-icons/fc';
+import { FcBusinessContact, FcContacts } from 'react-icons/fc';
 
 const TimelineCard = () => {
     const { friendTimeline } = useContext(FriendTimelineContext);
@@ -14,17 +14,16 @@ const TimelineCard = () => {
 
     if (!friendTimeline || friendTimeline.length === 0) {
         return (
-            <div className="min-h-[60vh] my-10 shadow p-10 rounded-md flex flex-col items-center justify-center ">
-                <FcContacts className='text-[100px] text-[#244D3F]' />
- 
-                <h2 className="font-medium text-5xl mb-16 text-[#244D3F] flex flex-col items-center gap-4">
-                    No interactions to display
+            <div className="min-h-[40vh] sm:min-h-[60vh] my-10 shadow p-10 rounded-md flex flex-col items-center justify-center ">
+                <FcBusinessContact className='text-[50px] sm:text-[100px] text-[#244D3F]' /> 
+                <h2 className="font-medium text-2xl sm:text-5xl mb-16 text-[#244D3F] flex flex-col items-center gap-4 text-center">
+                    No Interactions to display
                 </h2>
             </div>
         )
     }
     return (
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 min-h-[40vh] sm:min-h-[60vh] my-10'>
             {friendTimeline.map((item, index) => (
                 <div key={index} className='bg-white p-5 rounded-lg shadow-md flex items-center space-x-4 '>
                     <Image src={item.type === 'Text' ? TextImg : item.type === 'Call' ? CallImg : VideoImg} width={40} height={40} alt={TextImg}></Image>
