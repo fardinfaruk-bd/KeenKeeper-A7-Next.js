@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React from 'react';
 import { CiClock2 } from 'react-icons/ci';
 import { GoGraph } from 'react-icons/go';
 import { IoHomeOutline } from 'react-icons/io5';
