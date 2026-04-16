@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟 KeenKeeper
 
-## Getting Started
+🔗 **Live Site:** https://keenkeeper-alpha.vercel.app/
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**KeenKeeper** is a modern contact management web application built with Next.js. It helps users keep track of their friends and maintain consistent communication. The app visually organizes contacts into interactive cards and allows users to log interactions like calls, texts, and video chats — all while tracking engagement through a timeline and statistics dashboard.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technologies Used
 
-## Learn More
+* **Next.js (App Router)**
+* **React.js**
+* **Tailwind CSS**
+* **React Toastify**
+* **Recharts**
+* **JavaScript (ES6+)**
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. 👥 Interactive Friend Cards
 
-## Deploy on Vercel
+* Displays friend profiles with image, name, status (Overdue, Almost Due, On-Track), and relationship tags
+* Click on any card to view detailed friend information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. 📞 Smart Interaction Tracking
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Three action buttons: **Call**, **Text**, **Video**
+* Each interaction triggers a toast notification
+* Automatically logs the interaction into a **timeline with conditional rendering** (different visuals for call, text, video)
+
+### 3. 📊 Visual Statistics Dashboard
+
+* Tracks total number of calls, texts, and video interactions
+* Displays data using **Recharts** for clear and engaging visualization
+
+---
+
+## 🎯 Purpose
+
+KeenKeeper is designed to help users maintain meaningful relationships by reminding and tracking how often they connect with their friends — making sure no connection fades away.
+
+---
+
+## 💡 Future Improvements
+
+* Authentication system
+* Real-time database integration
+* Reminder notifications
+* Dark mode support
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Md Fardin Faruk**
+
+---
+## ⭐ Support
+
+If you like this project, don’t forget to give it a ⭐ on GitHub!
