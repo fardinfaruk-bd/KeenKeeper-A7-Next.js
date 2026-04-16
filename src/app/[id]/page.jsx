@@ -25,7 +25,6 @@ const friendPromise = async function () {
 
 
 
-
 const FriendDetailsPage = async ({ params }) => {
 
 const friends = await friendPromise();
