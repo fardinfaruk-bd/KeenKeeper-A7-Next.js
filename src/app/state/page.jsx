@@ -1,5 +1,10 @@
 import PieChartWithPaddingAngle from "@/components/stats/Rechart";
 
+export const metadata = {
+  title: "Stats - KeenKeeper",
+  description: "View your friendship statistics on KeenKeeper",
+};
+
 const page = () => {
     return (
         <div className="container mx-auto">

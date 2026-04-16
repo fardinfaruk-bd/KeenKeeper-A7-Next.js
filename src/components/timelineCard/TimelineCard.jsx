@@ -6,7 +6,7 @@ import CallImg from '@/assets/call.png';
 import VideoImg from '@/assets/video.png';
 import Image from 'next/image';
 
-import { FcBusinessContact, FcContacts } from 'react-icons/fc';
+import { FcBusinessContact } from 'react-icons/fc';
 
 const TimelineCard = () => {
     const { friendTimeline } = useContext(FriendTimelineContext);
@@ -17,7 +17,7 @@ const TimelineCard = () => {
             <div className="min-h-[40vh] sm:min-h-[60vh] my-10 shadow p-10 rounded-md flex flex-col items-center justify-center ">
                 <FcBusinessContact className='text-[50px] sm:text-[100px] text-[#244D3F]' /> 
                 <h2 className="font-medium text-2xl sm:text-5xl mb-16 text-[#244D3F] flex flex-col items-center gap-4 text-center">
-                    No Interactions to display
+                    No Interactions to display!!
                 </h2>
             </div>
         )

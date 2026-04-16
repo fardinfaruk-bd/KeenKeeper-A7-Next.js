@@ -9,6 +9,12 @@ import PhoneImg from "../../assets/call.png"
 import TextImg from "../../assets/text.png"
 import VideoImg from "../../assets/video.png"
 
+export const metadata = {
+  title: "Friend Details - KeenKeeper",
+  description: "View detailed information about your friend and manage your relationship effectively with KeenKeeper",
+};
+
+
 
 const friendPromise = async function () {
   const res = await fetch("https://keenkeeper-alpha.vercel.app/data.json", {
@@ -22,12 +28,11 @@ const friendPromise = async function () {
 
 const FriendDetailsPage = async ({ params }) => {
 
-  const friends = await friendPromise();
+const friends = await friendPromise();
+const { id } = await params;
+const friend = friends.find((friend) => String(friend.id) === id);
 
-  const { id } = await params;
 
-  const friend = friends.find((friend) => String(friend.id) === id);
-  console.log(friend);
 
   if (!friend) {
     notFound();
