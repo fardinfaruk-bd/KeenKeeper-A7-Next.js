@@ -6,12 +6,12 @@ import React, { useContext } from 'react';
 
 const MyBtn = ({ text, img, friend }) => {
 
-    const {friendTimeline, setFriendTimeline} = useContext(FriendTimelineContext);
-    console.log(friendTimeline, "friendTimeline");
-
-
+    const {friendTimeline, setFriendTimeline, setContactType} = useContext(FriendTimelineContext);
+    
+    
     const handleFriendContactBtn = () => {
         setFriendTimeline([...friendTimeline, friend]);
+        setContactType(text);
 
     }
 
