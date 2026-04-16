@@ -21,7 +21,7 @@ const MyBtn = ({ text, img, friend }) => {
         toast.success(`You ${text === 'Call'
             ? 'Called'
             : text === 'Video'
-                ? 'are Connected a Video Call with'
+                ? 'are Connected on Video Call with'
                 : 'Texted'}  ${friend.name} successfully!`);
         setFriendTimeline([...friendTimeline, updatedFriend]);
 
