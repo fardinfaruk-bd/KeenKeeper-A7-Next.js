@@ -27,9 +27,9 @@ const friendPromise = async function () {
 
 const FriendDetailsPage = async ({ params }) => {
 
-const friends = await friendPromise();
-const { id } = await params;
-const friend = friends.find((friend) => String(friend.id) === id);
+  const friends = await friendPromise();
+  const { id } = await params;
+  const friend = friends.find((friend) => String(friend.id) === id);
 
 
 
@@ -103,7 +103,7 @@ const friend = friends.find((friend) => String(friend.id) === id);
           </div>
 
 
-          <div className="bg-white p-4 rounded-xl shadow col-span-3 flex justify-between items-center text-center">
+          <div className="bg-white p-4 rounded-xl shadow col-span-3 flex justify-between items-center ">
             <div>
               <h3 className="font-medium text-xl text-[#244D3F]">Relationship Goal</h3>
               <p className="text-xs sm:text-[18px] text-[#64748B]">Connect every <span className="font-bold text-[#1F2937]">30 days</span></p>

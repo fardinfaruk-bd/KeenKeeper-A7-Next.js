@@ -8,14 +8,22 @@ import { toast } from 'react-toastify';
 const MyBtn = ({ text, img, friend }) => {
 
     const { friendTimeline, setFriendTimeline } = useContext(FriendTimelineContext);
-    console.log(friendTimeline, "my btn");
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+    });
 
     const handleFriendContactBtn = () => {
-        const now = new Date();
+        
         const updatedFriend = {
             ...friend,
             type: text,
-            time: now.toLocaleTimeString(),
+            time: formattedDate,
 
         };
         toast.success(`You ${text === 'Call'
