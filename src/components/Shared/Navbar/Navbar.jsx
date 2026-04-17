@@ -19,7 +19,7 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li><MyLink href={"/"}> Home</MyLink></li>
                             <li><MyLink href={"/timeline"} >Timeline</MyLink></li>
-                            <li><MyLink href={"/state"} >Stats</MyLink></li>
+                            <li><MyLink href={"/stats"} >Stats</MyLink></li>
                         </ul>
                     </div>
                     <button className=' gap-0 font-bold text-2xl'>Keen<span className='text-[#244D3F]'>Keeper</span></button>
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <ul className="flex px-1 gap-2 text-[#64748B]">
                         <li><MyLink href={"/"}><IoHomeOutline /> Home</MyLink ></li>
                         <li><MyLink href={"/timeline"}><CiClock2 /> Timeline</MyLink ></li>
-                        <li><MyLink href={"/state"}><GoGraph /> Stats</MyLink ></li>
+                        <li><MyLink href={"/stats"}><GoGraph /> Stats</MyLink ></li>
                     </ul>
                 </div>
             </div>
